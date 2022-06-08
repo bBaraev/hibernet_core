@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/postgres</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">postgres</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="dialect">org.hibernate.dialect.PostgresPlusDialect</property>
+        <property name="show_sql">true</property>
+        <mapping class="org.example.entity.Student"/>
+        <mapping class="org.example.entity1.Driver"/>
+        <mapping class="org.example.entity2.Dog"/>
+        <mapping class="org.example.entity3.Car"/>
+        <mapping class="org.example.entity4.House"/>
+        <mapping class="org.example.entity5.Teacher"/>
+        <mapping class="org.example.entity6.Cat"/>
+        <mapping class="org.example.entity7.Notebook"/>
+        <mapping class="org.example.entity8.Phone"/>
+        <mapping class="org.example.entity9.Cook"/>
+
+
+    </session-factory>
+</hibernate-configuration>
